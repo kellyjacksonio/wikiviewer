@@ -1,14 +1,14 @@
 const   express     = require("express"),
         app         = express(),
         bodyParser  = require("body-parser"),
-        request     = require("request");
+        request     = require("request"),
+        port = process.env.PORT || 8080;
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use("/styles", express.static(__dirname + "/styles"));
 
 app.set("view engine", "ejs");
 
-//
 var articleTitle = [];
 var description = [];
 var articleLink = [];
@@ -57,6 +57,6 @@ app.get("*", (req, res) => {
     res.redirect("/"); 
  });
 
-app.listen(3000, () => {
-    console.log("server listening :)");
+app.listen(port, () => {
+    console.log(`server listening on port ${port} :)`);
 });
