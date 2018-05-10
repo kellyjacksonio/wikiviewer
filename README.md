@@ -21,7 +21,7 @@ To Visit App:
 
 Please allow a moment for Heroku to wake up.
 
-[Live](https://wikiviewer-kj.herokuapp.com/)
+[WikiViewer](https://wikiviewer-kj.herokuapp.com/)
 
 ## Reflection
 
