@@ -2,13 +2,12 @@
 <html>
     <head>
         <title>Wikipedia Viewer</title>
-        
         <link href="/styles/style.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
 
     <body>
-        <h1>Wikipedia Article Search</h1>
+        <a href="#"><h1>Wikipedia Article Search</h1></a>
 
         <form action="/search" method="POST">
             <input id="search" name="search" type="search" placeholder="Search">
@@ -22,8 +21,8 @@
         <% if(displayResults) { %>
             <% if(articleTitle[0] === undefined) { %>
                 <div class="searchResult">No results found.</div>
-                <% } else  { %>
-            <% for (var i = 0; i < articleTitle.length; i++) { %>
+            <% } else  { %>
+                <% for (var i = 0; i < articleTitle.length; i++) { %>
                     <div class="searchResult">
                         <a href="<%=articleLink[i]%>" target="_blank" id="articleLink"><%= articleTitle[i] %></a>
                         <p><%= description[i] %></p>
@@ -33,5 +32,4 @@
         <% } %>
 
     </body>
-
 </html>
