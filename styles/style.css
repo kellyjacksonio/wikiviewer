@@ -5,16 +5,27 @@ html {
 
 body {
     background-color: rgb(82, 66, 121);
-    color: rgb(255, 255, 255);
+    color: #fff;
     text-align: center;
     font-family: "Open Sans", Arial, sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
 #articleLink {
     color: #26CBFC;
 }
 
+#articleLink:hover,
+#articleLink:active {
+    text-decoration: underline;
+}
+
 #button, #search, #random {
+    color: #000;
     height: 40px;
     font-size: 16px;
     padding: 10px;
