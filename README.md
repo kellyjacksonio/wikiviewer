@@ -6,10 +6,12 @@ Web application that takes a user’s search query and displays the top 10 most 
 
 Use the command lines below to clone the repository and start the program. You will need `node` installed globally on your machine.  
 
-`$ git clone https://github.com/kellyjacksonio/wikiviewer.git`
-`$ cd wikiviewer`
-`$ npm install`
-`$ npm start`
+```
+$ git clone https://github.com/kellyjacksonio/wikiviewer.git
+$ cd wikiviewer
+$ npm install
+$ npm start
+```
 
 To Visit App:
 
