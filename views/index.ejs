@@ -24,7 +24,6 @@
                 <div class="searchResult">No results found.</div>
                 <% } else  { %>
             <% for (var i = 0; i < articleTitle.length; i++) { %>
-                <% console.log(articleTitle[0]); %>
                     <div class="searchResult">
                         <a href="<%=articleLink[i]%>" target="_blank" id="articleLink"><%= articleTitle[i] %></a>
                         <p><%= description[i] %></p>
